@@ -19,8 +19,6 @@ Basit düzeyde otel işletmelerinde yapılan işlemleri gerçekleştirmek. Bunla
 
 
 ## Neler Devam Ediyor
-
-
   Formlar oluşturuluyor.
-  
+   # UseCase Diagram
   ![UseCaseDiagram](https://github.com/Iskenderun-Technical-University/ymg-donem-projesi-ymg-222523704/assets/130269170/0a1f75e2-1987-417d-9d90-7e497ba837d4)
