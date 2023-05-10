@@ -3,11 +3,6 @@
 
 Proje mini bir otel otomasyon projesidir.
 
-
-# Neler Yaptım
-Veri Tabanı oluşturuldu.
-Nesneler oluşturuldu.
-
 # 1. Motivasyonum
 Temel olarak Windows form üzerindeki işlemleri oluşturulan nesneler üzerinden hızlı ve esnek şekilde implement etmek.
 # 2. Amacım
@@ -18,6 +13,9 @@ Basit düzeyde otel işletmelerinde yapılan işlemleri gerçekleştirmek. Bunla
 ![database](https://github.com/Iskenderun-Technical-University/ymg-donem-projesi-ymg-222523704/assets/130269170/fbcca05e-c404-41b1-bbb4-04bea527408d)
 
 
+# Neler Yaptım
+Veri Tabanı oluşturuldu.
+Nesneler oluşturuldu.
 ## Neler Devam Ediyor
   Formlar oluşturuluyor.
    # UseCase Diagram
