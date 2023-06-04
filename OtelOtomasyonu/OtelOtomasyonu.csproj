@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AFD6B147-0954-4E57-8156-B98E55810595}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OtelOtomasyonu</RootNamespace>
+    <AssemblyName>OtelOtomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>hotel.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\Gerekli\Referans\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmCheckIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCheckIn.Designer.cs">
+      <DependentUpon>frmCheckIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\adisyon.cs" />
+    <Compile Include="Core\genel.cs" />
+    <Compile Include="Core\kullanici.cs" />
+    <Compile Include="Core\musteri.cs" />
+    <Compile Include="Core\oda.cs" />
+    <Compile Include="Core\rezervasyon.cs" />
+    <Compile Include="Core\sube.cs" />
+    <Compile Include="Core\urun.cs" />
+    <Compile Include="frmAdisyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdisyon.Designer.cs">
+      <DependentUpon>frmAdisyon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAna.Designer.cs">
+      <DependentUpon>frmAna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCheckOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCheckOut.Designer.cs">
+      <DependentUpon>frmCheckOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGiris.Designer.cs">
+      <DependentUpon>frmGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKrediKarti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKrediKarti.Designer.cs">
+      <DependentUpon>frmKrediKarti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKullaniciTanimla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKullaniciTanimla.Designer.cs">
+      <DependentUpon>frmKullaniciTanimla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMusteriler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMusteriler.Designer.cs">
+      <DependentUpon>frmMusteriler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMusteriTanimla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMusteriTanimla.Designer.cs">
+      <DependentUpon>frmMusteriTanimla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNormalOdeme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNormalOdeme.Designer.cs">
+      <DependentUpon>frmNormalOdeme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOdalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOdalar.Designer.cs">
+      <DependentUpon>frmOdalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOdaTanimla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOdaTanimla.Designer.cs">
+      <DependentUpon>frmOdaTanimla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRezervasyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRezervasyon.Designer.cs">
+      <DependentUpon>frmRezervasyon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSubeTanimla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSubeTanimla.Designer.cs">
+      <DependentUpon>frmSubeTanimla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUrunTanimla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUrunTanimla.Designer.cs">
+      <DependentUpon>frmUrunTanimla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCheckIn.resx">
+      <DependentUpon>frmCheckIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdisyon.resx">
+      <DependentUpon>frmAdisyon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAna.resx">
+      <DependentUpon>frmAna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCheckOut.resx">
+      <DependentUpon>frmCheckOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGiris.resx">
+      <DependentUpon>frmGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKrediKarti.resx">
+      <DependentUpon>frmKrediKarti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKullaniciTanimla.resx">
+      <DependentUpon>frmKullaniciTanimla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMusteriler.resx">
+      <DependentUpon>frmMusteriler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMusteriTanimla.resx">
+      <DependentUpon>frmMusteriTanimla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNormalOdeme.resx">
+      <DependentUpon>frmNormalOdeme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOdalar.resx">
+      <DependentUpon>frmOdalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOdaTanimla.resx">
+      <DependentUpon>frmOdaTanimla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRezervasyon.resx">
+      <DependentUpon>frmRezervasyon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSubeTanimla.resx">
+      <DependentUpon>frmSubeTanimla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUrunTanimla.resx">
+      <DependentUpon>frmUrunTanimla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\adisyon.datasource" />
+    <None Include="Properties\DataSources\kullanici.datasource" />
+    <None Include="Properties\DataSources\musteri.datasource" />
+    <None Include="Properties\DataSources\oda.datasource" />
+    <None Include="Properties\DataSources\rezervasyon.datasource" />
+    <None Include="Properties\DataSources\sube.datasource" />
+    <None Include="Properties\DataSources\urun.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kullanici-kayit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musteri-kayit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oda-tanimla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rezervasyon-olustur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sube-tanimla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="hotel.ico" />
+    <Content Include="Resources\hosgeldiniz.png" />
+    <Content Include="Resources\mini-logo.png" />
+    <Content Include="Resources\otel-logo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
